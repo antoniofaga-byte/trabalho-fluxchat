@@ -8,13 +8,22 @@
 <style>
     body{
         background-color: rgb(0, 208, 174);
+         height: 100vh;
+          font-family:
+           sans-serif;
+            display:
+             flex;
+              overflow:
+               hidden;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { height: 100vh; font-family: sans-serif; display: flex; overflow: hidden; }
-
-        /* Painel Esquerdo - Lista de Contatos */
+    * {
+         margin: 0; 
+         padding: 0;
+          box-sizing:
+           border-box;
+     }
         .sidebar {
-            width: 30%; /* Largura da parte dos contatos */
+            width: 30%; 
             min-width: 250px;
             background-color: #ffffff;
             border-right: 1px solid #ddd;
@@ -22,28 +31,26 @@
             flex-direction: column;
         }
 
-        /* Topo do painel esquerdo */
-        .sidebar-header {
+        
+        .direita{
             background-color: #ededed;
             padding: 15px;
             font-weight: bold;
             border-bottom: 1px solid #ddd;
         }
 
-        /* Barra de pesquisa */
-        .search-box {
+       
+        .Quadro {
             padding: 10px;
             background-color: #f6f6f6;
         }
-        .search-box input {
+        .Quadro input {
             width: 100%;
             padding: 8px;
             border: none;
             border-radius: 5px;
         }
-
-        /* Lista de conversas */
-        .contact-list {
+        .Lista {
             overflow-y: auto;
             flex: 1;
         }
@@ -54,44 +61,43 @@
             align-items: center;
             cursor: pointer;
         }
-        .contact:hover { background-color: #f5f5f5; }
-        .contact-avatar {
+        .contact:hover {
+             background-color: #f5f5f5;
+         }
+        .contatos {
             width: 40px; height: 40px;
             background-color: #ccc;
             border-radius: 50%;
             margin-right: 15px;
-        }
-
-        /* Painel Direito - Chat */
+        }  
         .chat-area {
-            flex: 1; /* Ocupa o restante da tela */
-            background-color: #e5ddd5; /* Cor de fundo do chat */
+            flex: 1; 
+            background-color: #e5ddd5; 
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #555;
+            color: #007b34;
         }
 </style>
 
 <body>
-    <center><h2><b class="FluxChat">FluxChat</b></h2></center>
+    <center><h2><b class="FluxChat">FluxChat</b></h2></center> 
+    <center><a href="aluno.html"><button>Deslogar</button></a></center>
     
 <body>
-
-    <!-- Painel da Esquerda (WhatsApp style) -->
     <div class="sidebar">
-        <div class="sidebar-header">Conversas</div>
-        <div class="search-box">
+        <div class="direita">Conversas</div>
+        <div class="Quadro">
             <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
         </div>
-        <div class="contact-list">
-            <div class="contact"><div class="contact-avatar"></div><div>João Silva</div></div>
-            <div class="contact"><div class="contact-avatar"></div><div>Maria Souza</div></div>
-            <div class="contact"><div class="contact-avatar"></div><div>Grupo Devs</div></div>
+        <div class="Lista">
+            <div class="contact"><div class="contatos"></div><div>João Silva</div></div>
+            <div class="contact"><div class="contatos"></div><div>Maria Souza</div></div>
+            <div class="contact"><div class="contatos"></div><div>Grupo Devs</div></div>
         </div>
     </div>
 
-    <!-- Painel da Direita (Conteúdo) -->
+ 
     <div class="chat-area">
         <h1>Selecione uma conversa</h1>
     </div>
