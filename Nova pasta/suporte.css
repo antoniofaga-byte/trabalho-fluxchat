@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.suporte {
+    background-color: rgb(9, 168, 193);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+.suporte h2 {
+    color: #15cfb6;
+    margin-bottom: 10px;
+}
+.suporte p {
+    color: #555;
+    margin-bottom: 30px;
+}
+.chat {
+    background-color: #08d2c8;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition:0.3s;
+}
+.chat:hover {
+    background-color: #128C7E;
+}
+.icon {
+    margin-right: 10px;
+}
