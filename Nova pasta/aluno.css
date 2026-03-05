@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(0, 208, 174);
+    }
+    div{
+        color: blue;
+        border: 20px;
+    }
+    .FluxChat{
+        color: rgb(12, 125, 185);
+    }
+   
+     .header-logo {
+        display: flex;
+        align-items: center; 
+        gap: 25px; 
+        font-family: Arial, sans-serif;
+    }
+
+   
+    .header-logo img {
+        height: 50px; 
+        width: auto;
+    }
+
+    .header-logo h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+     .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .button:hover {
+        background-color: #0056b3;
+    }
