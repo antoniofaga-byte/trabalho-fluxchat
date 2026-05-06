@@ -10,24 +10,31 @@
     <div class="header-logo">
    <img src="C:/Users/aluno/OneDrive/Desktop/Nova%20pasta/chattt" alt=""width="250px" alt="" src="sua-imagem.jpg" style="float:left; margin-left: 2px;">
   <center><h2>BEM VINDO A <b class="FluxChat">FluxChat</b></h2></center>
- 
-</div> <CENTER><H3>Login</H3></CENTER>
-<divstyle="display: flex; align-items: center; gap: 1000px;"><center>
- <form action="#">
-  <label for="fname">Nome completo:</label><br>
-  <input type="text" id="fname" ="fname" ><br>
-  <label for="lname">RG:</label><br>
-  <input type="text" id="lname" name="lname" ><br>
-  <label for="lname">CPF:</label><br>
-  <input type="text" id="lname" name="lname" ><br>
-  <label for="lname">email:</label><br>
-  <input type="text" id="lname" name="lname" ><br>
-  <br>
-  <a href="chat.html">
- <button type="button" class="button">Entrar</button>
+    
+</head>
+<body>
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário"><br>
+    <input type="password" id="senha" placeholder="Senha"><br>
+    <a href="chat.html">
+ <button type="button" class="button" onclick="validarLogin()">Entrar</button>
 </a>
- </form> </center>
-</div>
+    <script>
+        function validarLogin() {
+            // Obtém os valores dos campos [1]
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            // Define um usuário e senha fixos
+            if (usuario === "admin" && senha === "1234") {
+                alert("Login efetuado com sucesso!");
+                // Aqui você redirecionaria para outra página
+                // window.location.href = "home.html";
+            } else {
+                alert("Usuário ou senha incorretos.");
+            }
+        }
+    </script>
 <br><br><br><br><br><br>
 <hr style="height: 5px; background-color: black; border: none;">
 <center><h2>suporte</h2></center>
